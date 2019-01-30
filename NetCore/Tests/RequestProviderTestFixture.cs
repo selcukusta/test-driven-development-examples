@@ -32,7 +32,7 @@ namespace NetCore.Tests
         [TestCase("a", 4)]
         [TestCase("b", "test")]
         [TestCase("c", true)]
-        public void public void GetQueryValueOrDefault_GivenActualCases_ReturnExpected<T>(string key, T expected)
+        public void GetQueryValueOrDefault_GivenActualCases_ReturnExpected<T>(string key, T expected)
         {
             var provider = new RequestProvider(_httpContextAccessor);
             var result = provider.GetQueryValueOrDefault<T>(key);
